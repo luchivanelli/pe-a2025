@@ -1,0 +1,8 @@
+---
+const {icon, id, url} = Astro.props
+---
+
+<a href={url} id={id} class="flex items-center gap-1 text-sm md:text-lg tracking-wider border-[1px] border-yellow rounded-lg py-0.5 px-2 cursor-pointer hover:scale-105 transition-all">
+    <img src={icon} alt="" class="w-5">
+    <slot/>
+</a>
