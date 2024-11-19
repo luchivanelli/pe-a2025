@@ -36,7 +36,7 @@ const Gallery = ()=> {
             
             <div id="modal-container" className="hidden fixed top-0 h-screen w-full bg-[#000000d5] z-50">
                 <div className="flex flex-col gap-2 justify-center items-center h-full">
-                    <button onClick={handleModal} className="flex items-center gap-1 text-sm md:text-lg tracking-wider border-[1px] border-yellow rounded-lg py-0.5 px-2 cursor-pointer hover:scale-105 transition-all">
+                    <button onClick={handleModal} className="flex items-center gap-1 text-sm md:text-lg tracking-wider bg-yellow text-blue font-bold font border-2 border-blue rounded-lg py-0.5 px-2 cursor-pointer hover:scale-105 transition-all">
                         <img src="/icons/arrow-back-up.svg" alt="" className="w-5"/>
                         Volver atrás
                     </button>
