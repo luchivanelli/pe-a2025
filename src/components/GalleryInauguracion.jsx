@@ -32,8 +32,8 @@ const GalleryInauguracion = ()=> {
                 ))}
             </div>
             <div className="flex">
-                <button id="button-more" onClick={handleLoad} className="border-2 border-yellow px-3 py-0.5 flex justify-center rounded-md mx-auto my-2 font tracking-wider hover:bg-yellow hover:text-blue transition-all">Cargar más</button> 
-                <a href="https://drive.google.com/drive/folders/1d1EOCi7-v-A_lswgzDOR3dz3kcwrV3TE" target="_blank" className="border-2 border-yellow px-3 py-0.5 flex justify-center rounded-md mx-auto my-2 font tracking-wider hover:bg-yellow hover:text-blue transition-all">Ver todas las fotos</a> 
+                <button id="button-more" onClick={handleLoad} className="border-2 border-yellow px-3 py-0.5 pt-1 flex justify-center rounded-md mx-auto my-2 font tracking-wider hover:bg-yellow hover:text-blue transition-all">Cargar más</button> 
+                <a href="https://drive.google.com/drive/folders/1d1EOCi7-v-A_lswgzDOR3dz3kcwrV3TE" target="_blank" className="border-2 border-yellow px-3 py-0.5 pt-1 flex justify-center rounded-md mx-auto my-2 font tracking-wider hover:bg-yellow hover:text-blue transition-all">Ver todas las fotos</a> 
             </div>
             <div id="modal2-container" className="hidden justify-center fixed top-0 h-screen w-full bg-[#000000d5] z-50">
                 <div className="flex flex-col gap-2 justify-center items-center h-full">
