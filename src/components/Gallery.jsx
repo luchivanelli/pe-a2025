@@ -40,7 +40,7 @@ const Gallery = ()=> {
                         <img src="/icons/arrow-back-up.svg" alt="" className="w-5"/>
                         Volver atrás
                     </button>
-                    <img id="img-modal" src={imageSelected} className="max-w-[320px] max-h-[350px] sm:max-w-[400px] sm:max-h-[450px] md:max-w-[600px] md:max-h-[85%]"/>
+                    <img id="img-modal" src={imageSelected} className="max-w-[340px] max-h-[380px] sm:max-w-[400px] sm:max-h-[450px] md:max-w-[600px] md:max-h-[85%]"/>
                 </div>
             </div>
         </div>
