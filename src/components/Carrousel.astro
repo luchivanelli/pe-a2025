@@ -1,0 +1,76 @@
+---
+const {images} = Astro.props
+---
+
+<div class="carousel max-w-[400px] md:max-w-[600px]">
+  <div class="carousel-track" id="carouselTrack">
+    {images.map(image => (
+        <div class="carousel-slide"><img src={image} alt="Imagen 1" /></div>
+    ))}
+  </div>
+  <div class="controls">
+    <button class="control" id="prev">❮</button>
+    <button class="control" id="next">❯</button>
+  </div>
+</div>
+
+
+<style>
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      width: 90%;
+      margin: auto;
+    }
+  
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    .carousel-slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .carousel img {
+      display: block;
+      width: 100%;
+    }
+  
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+  
+    .control {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+  </style>
+  
+  
+  <script>
+    const track = document.getElementById('carouselTrack');
+    const slides = document.querySelectorAll('.carousel-slide');
+    let index = 0;
+  
+    document.getElementById('next').addEventListener('click', () => {
+      index = (index + 1) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    });
+  
+    document.getElementById('prev').addEventListener('click', () => {
+      index = (index - 1 + slides.length) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    });
+  </script>
+  
