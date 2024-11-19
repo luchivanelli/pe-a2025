@@ -23,9 +23,9 @@ const Gallery = ()=> {
     return (
         <div>
             <div className="flex justify-center pt-6 gap-3 tracking-wide">
-                <button className={`text-sm border-2 border-white px-3 rounded-lg hover:bg-white hover:text-blue transition-all ${gallerySelected == inicios ? "bg-white text-blue" : null}`} onClick={()=> handleGallery(inicios)}>Inicios</button>
-                <button className={`text-sm border-2 border-white px-3 rounded-lg hover:bg-white hover:text-blue transition-all ${gallerySelected == avances ? "bg-white text-blue" : null}`} onClick={()=> handleGallery(avances)}>Avances</button>
-                <button className={`text-sm border-2 border-white px-3 rounded-lg hover:bg-white hover:text-blue transition-all ${gallerySelected == actual ? "bg-white text-blue" : null}`} onClick={()=> handleGallery(actual)}>Actual</button>
+                <button className={`text-sm md:text-lg border-2 border-white px-3 rounded-lg hover:bg-white hover:text-blue transition-all ${gallerySelected == inicios ? "bg-white text-blue" : null}`} onClick={()=> handleGallery(inicios)}>Inicios</button>
+                <button className={`text-sm md:text-lg border-2 border-white px-3 rounded-lg hover:bg-white hover:text-blue transition-all ${gallerySelected == avances ? "bg-white text-blue" : null}`} onClick={()=> handleGallery(avances)}>Avances</button>
+                <button className={`text-sm md:text-lg border-2 border-white px-3 rounded-lg hover:bg-white hover:text-blue transition-all ${gallerySelected == actual ? "bg-white text-blue" : null}`} onClick={()=> handleGallery(actual)}>Actual</button>
             </div>
             
             <div className="p-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2  max-w-[1200px] md:mx-auto">

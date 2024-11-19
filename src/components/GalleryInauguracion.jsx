@@ -22,7 +22,7 @@ const GalleryInauguracion = ()=> {
     }
     
     return (
-        <div>
+        <div className="pb-4">
             <div className="p-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 max-w-[1200px] md:mx-auto h-full">
                 {inauguracion.map(image=> (
                     <img key={image} src={image} className="h-[120px] sm:h-[160px] md:h-[200px] object-cover w-full hover:scale-95 transition-all cursor-pointer" onClick={()=> handleImage(image)}/>
@@ -31,9 +31,9 @@ const GalleryInauguracion = ()=> {
                     <img key={image} src={image} className="h-[120px] sm:h-[160px] md:h-[200px] object-cover w-full hover:scale-95 transition-all cursor-pointer" onClick={()=> handleImage(image)}/>
                 ))}
             </div>
-            <div className="flex">
-                <button id="button-more" onClick={handleLoad} className="border-2 border-yellow px-3 py-0.5 pt-1 flex justify-center rounded-md mx-auto my-2 font tracking-wider hover:bg-yellow hover:text-blue transition-all">Cargar más</button> 
-                <a href="https://drive.google.com/drive/folders/1d1EOCi7-v-A_lswgzDOR3dz3kcwrV3TE" target="_blank" className="border-2 border-yellow px-3 py-0.5 pt-1 flex justify-center rounded-md mx-auto my-2 font tracking-wider hover:bg-yellow hover:text-blue transition-all">Ver todas las fotos</a> 
+            <div className="flex md:text-lg max-w-[500px] mx-auto">
+                <button id="button-more" onClick={handleLoad} className="border-2 border-yellow px-3 py-0.5 pt-1 flex items-center justify-center rounded-md mx-auto my-2 font tracking-wider hover:bg-yellow hover:text-blue transition-all">Cargar más</button> 
+                <a href="https://drive.google.com/drive/folders/1d1EOCi7-v-A_lswgzDOR3dz3kcwrV3TE" target="_blank" className="border-2 border-yellow px-3 py-0.5 pt-1 flex items-center justify-center rounded-md mx-auto my-2 font tracking-wider hover:bg-yellow hover:text-blue transition-all">Ver todas las fotos</a> 
             </div>
             <div id="modal2-container" className="hidden justify-center fixed top-0 h-screen w-full bg-[#000000d5] z-50">
                 <div className="flex flex-col gap-2 justify-center items-center h-full">
