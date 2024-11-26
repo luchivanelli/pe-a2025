@@ -7,7 +7,7 @@ export default {
 			  blue: '#0b0d3d',  
 			  blue2: '#033F87',      
 			  yellow: '#ffc809'      
-			}
+			},
 		  }
 	},
 	plugins: [],
