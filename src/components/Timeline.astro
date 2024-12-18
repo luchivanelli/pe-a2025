@@ -1,0 +1,100 @@
+---
+let history = [
+    {date: "1985 / 1989", description: "En 1985 en Arroyo Seco, el plantel del Club Atlético Boca Juniors visitó nuestro pueblo (ya hoy ciudad), para disputar un partido de fútbol organizado por algunos funcionarios políticos, con el fin de festejar la FIESTA DE LA PAPA. El partido Boca lo jugó vs ASAC, un equipo que juega en la Liga Regional del Sud en la zona y empataron 1 a 1, ganando Boca por penales. Esa visita que fue furor, motivó a muchos bosteros de nuestro pueblo. En esos años venideros, se armó la primera juntada de los bosteros de arroyo con la mirada a futuro siempre de crear la peña de nuestra ciudad. Por allá en 1989, se realizó una gran cena en la que nos visitó “Mono” Navarro Montoya y Jose Luis Villareal y es donde se afianzó más aún en la idea de crear una peña, organizando así un grupo de amigos bosteros que empezaran a viajar a la Bombonera y a juntarse a cenar pasando momentos de peñas"},
+    {date: "2000 / 2004", description: "Desde la década del 90 hasta principios del 2000, fue donde se empezó a armar algo nuevamente, a través de la época dorada donde el equipo de Bianchi deslumbraba hasta siendo campeón del mundo. En 2004 se fue armando un nuevo grupo, en la misma época dorada en la que Boca Juniors seguía ganando todo... Se constituyó una nueva peña en el que se estuvo alquilando un local durante un par de años donde se realizo una cena con la visita de Rojitas, Graciani y banderita Laudoneo. También fue en esos años la famosa visita de la antorcha del centenario del CABJ que recorrió el pais. Muchas veces se armaban viajes a la Bombonera. Y todo nuevamente se fue disolviendo a fines del 2007"},
+    {date: "2011", description: "Al llegar año 2011, fue cuando se fue armando de a poco un grupo conformado por jovenes en general y algunos mayores, que hasta el día de la fecha perdura ininterrumpidamente. Se realizó una reunion donde nos fijamos levantar la peña y que esté siempre presente en el medio de los hinchas de boca de Arroyo Seco y la zona aledañas. Poco a poco se fue organizando viajes en trafic y a veces en colectivos tanto de local como visitante. Hasta un grupo de amigos viajaron al exterior por Copa Libertadores."},
+    {date: "2012", description: "Aquel 13 de abril de 2012 marcó el inicio de nuestra peña Arroyo Seco, coincidiendo con el centenario del primer partido de Boca en primera, una categoría que nunca abandonó. Inspirados por esa continuidad, quisimos crear algo que perdurara: llevar nuestra bandera a 'La Bombonera', acercar socios y no socios al templo, ayudar en trámites, organizar eventos solidarios, cenas con figuras del club y mantener un lugar físico para ver partidos y compartir momentos. Nuestro sueño era tener un terreno propio, logrado con esfuerzo colectivo y sin apoyo externo. Comenzamos alquilando un local con pantalla gigante, buffet, parrillero, y organizamos acciones como la recolección de más de 200 kg de tapitas para la “Fundación Garrahan”, además de ayudar a barrios carenciados, hospitales y más. Así seguimos construyendo nuestra historia."},
+    {date: "2013", description: "Fue en el 2013 donde tuvimos la primera cena. Nos visitó nada más y nada menos que Ratin y Marzolini, dos ídolos del club disfrutando con más de 500 personas, cenando una gran vaquillona. La peña día a día fue avanzando y creciendo en la confianza de la gente, eramos nuevos y había que afianzarla. Viajábamos muy seguido al club para ayudar a tramitar a socios sus problemas o carnets nuevos entre varias cosas mas. También nuestra idea era realizar la personería jurídica que fueron muchos viajes y reuniones para investigar los pasos a seguir en la creación de la misma."},
+    {date: "2014", description: "Otra de las tantas acciones solidarias por alla en 2014 fue la de llevar al cine a los chicos de una escuelita rural del barrio el Ombú, donde fueron por primera vez a ver una pelicula de Disney en un cine. Fue el puntapié inicial para seguir ayudando a la escuelita a través de los años en numerosas acciones, como la de festejar el dia del niño allí y llevar regalos, navidades, chocolatadas para todos. También donar cajas de alimentos a las familias de esos chicos, entre muchas cosas. En ese año, realizamos una cena con la visita de otro ídolo del club, Quique Hrabina el señor del corazón por Boca. Una noche cálida de salón repleto, como siempre lo es Boca y su gente. Quique nos contó numerosas anécdotas."},
+    {date: "2015", description: "En el 2015, nos visitaron varios ídolos, tuvimos una cena íntima con HEBER MASTRANGELO Y PEROTTI, ambos campeones del mundo en 1977 con Boca juniors en suelo alemán en esa oportunidad. Ese mismo año, realizamos la gran cena anual, donde explotó nuevamente el salón del Centro de Jubilados. Vino Jorge Ribolzi, Omar Larrosa, Nicolás Novello y el vicepresidente en ese entonces Royco Ferrari. Fue esa noche donde se presentó el trámite de la Personería Jurídica ya terminada después de varios meses presentar tantos requisitos. ¡SIII! LOGRAMOS LA TAN ANSIADA PERSONERIA JURÍDICA N° 307 DE LA PROVINCIA DE SANTA FE."},
+    {date: "2016", description: "En 2016, nos visitó el jugador más ganador de la historia del club. Fue una sorpresa, todos se enteraron alli cuando se abrió el telón y apareció él con la camiseta de Boca y alzando la libertadores junto al otro ex jugador Matias Arce. La gente quedó impactada. El León Sebastian Battaglia, deslumbrando a todo el público presente, tocamos el cielo con las manos. Y esa misma noche presentamos el proyecto en adquirir un terreno comprado con fondos propios de la labor en absoluto de la peña en el que teminamos de abonar a principios del 2020."},
+    {date: "2018 / 2019", description: "En 2018, nos visitó otro campeón del mundo con Boca y campeón Sudaméricano como director técnico, el Chino Benitez con Daniel Campos, histórico periodista de Pintado de Azul y Oro. Presentamos el proyecto de la futura sede a construir. Es aquí donde nos propusimos llevar a cabo el gran lema 'La Sede se construirá tal como la Bombonera, por el propio sudor y esfuerzo del hincha de Boca, sin ningúna ayuda del estado ni gobierno, partido politico y entidad sea cual fuese, todo POR AMOR A BOCA porque así es el hincha de Boca y Boca nunca teme luchar'. En el 2019 llegaron a la ciudad el Chipi Barijo, Matias Arce y Suchar Ruiz donde tuvimos un asado intimo, fue una noche de muchas anécdotas, pasando un momento de charlas inolvidables."},
+    {date: "2020", description: "En el 2020 llegó el momento mas duro para la institución, post campeonato de Boca, nos tocó como a todos la pandemia (COVID-19), pero como todo hincha de Boca le pusimos el pecho, y la peña siguió más que nunca en actividad realizando muchas acciones solidarias, ayudando a la sociedad en los sectores más vulnerables, como también continuando, pero mucho mas lento, con las obras de la sede y demás actividades, sin bajar los brazos. Nuestro sueño seguía en pie y estamos felices de que, en forma continua, nunca se bajaron los brazos. Sabemos que no es fácil y ojalá la peña sea persistente de por vida, esa es la idea. Apostar a los jovenes en un futuro para seguir adelante ya que estar tantos años al cargo de una institución es muy desgastador, más aún cuando se deja todo al 100%. Pero íbamos en buen camino a lograr nuestro sueño de tener la sede propia."},
+    {date: "2021", description: "Por allá en 2021, de a poco todo volvia a la normalidad, arrancaba el público visitante y de a poco volvían los viajes, el gran motor para seguir acelerando con la obra de la sede. Todos los chicos le metimos full-time, 24/7, para que todo salga más que bien, cumplimos muchos más sueños en llevar gente a conocer la Bombonera y presenciar un partido de Boca Juniors. A su vez, siempre presente en todas las acciones sociales, con la seguidilla de tantos años gestionando medicamentos para los hospitales, dispensarios y salas médicas, no solo de Arroyo Seco sino también de ciudades aledañas. La obra de la sede avanzó a pasos agigantados, llegamos a las aberturas, al techado general final, avanzamos en los baños tanto de caballeros como de damas, oficina planta alta y su baño, el salón de reuniones y eventos sociales de planta alta. Otro años más con la personeria jurídica al día, sabiendo todo el gasto de tiempo y económico que conlleva."},
+    {date: "2022", description: "Llegado el 2022, batimos record de gente en el salón del centro de jubilados, con la visita de Chipi Barijo, Matías Arce y más dirigentes del club. Colapsó el salón, quedando mucha gente afuera. La peña siguió yendo a los partidos de visitantes llevando siempre su bandera y representando a la institución en todos lados, tanto en plano nacional como internacional. Fue otro año exitoso, con muchísimas acciones solidarias más y, como todos los demás años, actualizando la personería jurídica al día. También llegamos a 600 socios de en nuestra institución, con el fin de a corto plazo llegar y superar los 1000."},
+    {date: "2023 / 2024", description: "El 2023 fue tremendo, se avanzó un montón, hasta casi casi tuvimos la sede terminada. Ya con el material de frente con los colores xeneizes, interior pintado, con luces, cielorrazo terminado en todas las áreas. Sector cocina con alacena terminada, sillas en su totalidad comprada, los aires acondicionados en cada sector instalados, entre varias cosas más. En el 2024, se realizó todo lo que es murales y demás terminaciones, compras de herramientas, artículos para cocina entre otros. El 22 de junio, logramos inaugurar nuestra sede."},
+    {date: "Actualidad", description: "Luego de concretar el proyecto de la sede social, se vienen otros proyectos muy lindos a futuro, la escuelita de fútbol es un sueño de todos. Siempre decimos y pedimos que la peña esté activa de por vida, que todo sea persistentemente. Por eso invitamos más que nunca a la juventud para integrarse porque esto sigue."},
+]
+
+---
+
+<section class="relative pl-4 md:p-10 my-8 mx-auto max-w-[900px]">
+    <div class="hidden md:block">
+        <span class="line absolute h-full top-0 border-2"></span>
+        <div class="flex flex-col justify-center relative">
+            {history.map((item, index) => (
+                <div class={`${index % 2 === 0 ? "left" : "right"} item rounded-md`}>
+                    <h3 class="text-center mt-2 font text-lg text-yellow">{item.date}</h3>
+                    <p class="text-sm m-2 px-2">{item.description}</p>
+                </div>
+            ))}
+        </div>
+    </div>
+    <div class="md:hidden block">
+        <span class="absolute h-full top-0 border-2"></span>
+        <div class="flex flex-col justify-center relative gap-6">
+            {history.map((item) => (
+                <div class="item item-mobile rounded-md mx-5">
+                    <h3 class="text-center mt-2 font text-lg text-yellow">{item.date}</h3>
+                    <p class="text-sm m-2 px-2">{item.description}</p>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
+
+<style>
+    .line {
+        right: 50%;
+    }
+
+    .left {
+        width: 50%;
+        transform: translateX(-24px);
+    }
+
+    .left::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 0;
+        transform: translateX(21px);
+        width: 20px;
+        height: 10px;
+        /* border-radius: 50%; */
+        background-color: white;
+    }
+    
+    .right {
+        width: 50%;
+        transform: translate(100%) translateX(20px);
+    }
+
+    .right::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        transform: translateX(-21px);
+        width: 20px;
+        height: 10px;
+        /* border-radius: 50%; */
+        background-color: white;
+    }
+
+    .item {
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(17, 25, 40, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+
+    .item-mobile::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        transform: translateX(-20px);
+        width: 20px;
+        height: 10px;
+        background-color: white;
+    }
+</style>

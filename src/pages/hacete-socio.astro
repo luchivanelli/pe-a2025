@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Form from '../components/Form'
+---
+
+<Layout title="Arroyo Seco es de Boca - Hacete socio">
+    <h3 class="font text-2xl md:text-3xl mt-3 p-4 text-center">Hacete socio de la peña</h3>
+    <section class="md:my-3 mx-6">
+        <div class="max-w-[900px] mx-auto">
+            <h5 class="font text-yellow text-lg md:text-2xl mb-2">Beneficios y derechos:</h5>
+            <ul class="text-sm md:text-xl">
+                <li class="list-disc list-inside">Utilización de las instalaciones, tanto para ver los partidos y/o demás jornadas, <strong class="text-yellow">sin costo</strong></li>
+                <li class="list-disc list-inside">Sorteos mensuales por camisetas, entradas y demás premios</li>
+                <li class="list-disc list-inside">Prioridad en gestiones en conjunto con el Departamento Interior del Club Atlético Boca Juniors</li>
+                <li class="list-disc list-inside">Prioridad de carnets para viajar a la cancha y en el colectivo</li>
+            </ul>
+            <div class="card p-2 my-8 md:px-6 rounded-lg text-xs md:text-base max-w-[900px]">
+                <h5 class="font text-yellow font-bold">Atención</h5>
+                <p>Los socios estarán obligados a cumplir y respetar el Estatuto de nuestra Institución y el reglamento general</p>
+            </div>
+        </div>
+        <div class="max-w-[900px] mx-auto md:mt-14">
+            <h5 class="font text-yellow text-lg md:text-2xl">Para formar parte de la asociación, se deberá completar el siguiente formulario:</h5>
+            <Form client:only="react"/>
+        </div>
+    </section>
+</Layout>
