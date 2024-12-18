@@ -2,7 +2,7 @@
 const {icon, id, url} = Astro.props
 ---
 
-<a href={url} id={id} class="flex justify-center items-center gap-1 text-sm md:text-lg border-[1px] border-yellow rounded-lg py-0.5 px-2 cursor-pointer hover:scale-105 transition-all">
+<a href={url} id={id} target="_blank" class="flex justify-center items-center gap-1 text-sm md:text-lg border-[1px] border-yellow rounded-lg py-0.5 px-2 cursor-pointer hover:scale-105 transition-all">
     <img src={icon} alt="" class="w-4 sm:w-5">
     <slot/>
 </a>

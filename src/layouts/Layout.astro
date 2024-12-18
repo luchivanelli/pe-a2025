@@ -78,4 +78,11 @@ const { title } = Astro.props;
 		background-color: rgba(17, 25, 40, 0.493);
 		border: 1px solid #ffca095e;
 	}   
+
+	input:-webkit-autofill {
+		background-color: transparent !important;
+		color: white !important;
+		-webkit-text-fill-color: white !important;
+		transition: background-color 5000s ease-in-out 0s;
+	}
 </style>
